@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moby Creative Coming Soon Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @font-face {
+  font-family: 'Nolan';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/312465/Nolan-Regular.ttf") format("truetype");
+}
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #edeff0;
+  font-family: 'Nolan', sans-serif;
+}
+
+.logo {
+  top: 70px;
+  width: 100px;
+  margin-top: -50px;
+  position: relative;
+  animation-name: dips;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.wave-wrapper {
+  position: relative;
+  animation-name: wave;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.wave {
+  width: 140px;
+  position: relative;
+}
+
+.cover-up {
+  height: 45px;
+  margin-top: -6px;
+  background-color: #edeff0;
+}
+
+@keyframes dips {
+  0% {
+    transform: rotate(-5deg);
+  }
+  10% {
+    transform: translateY(-3px) rotate(5deg);
+  }
+  20% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(3deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  90% {
+    transform: translateY(-25px) rotate(3deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.text {
+  z-index: 5;
+  margin-top: -5px;
+  position: relative;
+  color: #78909C;
+}
+
+.logo-text {
+  width: 75px;
+  margin-top: 20px;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #78909C;
+}
+
+.wave-break {
+  width: 50px;
+  margin-top: 20px;
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="logo">
+	<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/312465/Moby-08.svg" />
+</div>
+<div class="wave-wrapper">
+	<div class="wave">
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/312465/Moby%20Wave_White%20Fill.svg" />
+	</div>
+	<div class="cover-up"></div>
+</div>
+<div class="text">Something big is coming</div>
+<img class="wave-break" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/312465/Moby%20Wave_White%20Fill.svg" />
+<img class="logo-text" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/312465/Moby-09.svg" />
+<div class="copyright">&copy; Moby Creative 2017</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

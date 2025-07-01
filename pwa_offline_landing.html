@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Our system is designed to help Malaysian brands capture more leads, track conversions, and measure impact – in real time.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="manifest" href="./_manifest.json?asdas=asdasd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#20abc3">
+    <meta name="theme-color" content="#20abc3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--
+    <meta http-equiv="refresh" content="0; url = https://crm.myloan.my/" />
+    -->
+    <!-- Title -->
+    <!-- Primary Meta Tags -->
+    <title>Osem</title>
+    <meta name="title" content="Osem" />
+    <meta name="description" content="Our system is designed to help Malaysian brands capture more leads, track conversions, and measure impact – in real time." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://osem.gigsmalaysia.com/pwa_offline_landing.html" />
+    <meta property="og:title" content="Osem" />
+    <meta property="og:description" content="Our system is designed to help Malaysian brands capture more leads, track conversions, and measure impact – in real time." />
+    <meta property="og:image" content="./assets/lead/logo/meta-1200x800.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://osem.gigsmalaysia.com/pwa_offline_landing.html" />
+    <meta property="twitter:title" content="Osem" />
+    <meta property="twitter:description" content="Our system is designed to help Malaysian brands capture more leads, track conversions, and measure impact – in real time." />
+    <meta property="twitter:image" content="./assets/lead/logo/meta-1200x800.jpg" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Play:400,700);
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background: #843592 !important;
+            font-family: "Play";
+        }
+        h1 {
+            font-size: 2rem;
+            color: #FFF;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .smart-glass {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 288px;
+            height: 388px;
+        }
+        .logo {
+            width: 288px;
+            height: 288px;
+            position: relative;
+        }
+        .circle {
+            padding: 20px;
+            border: 6px solid transparent;
+            border-top-color: #ffffff;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            animation: connect 2.5s linear infinite;
+        }
+        .xbox {
+            background-image: url(./assets/lead/logo/logo-transparent-white-96x96.png);
+            width: 96px;
+            height: 96px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .loading-text {
+            text-transform: uppercase;
+            color: #FFF;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            -moz-transition:all 0.5s ease-in-out;
+            -webkit-transition:all 0.5s ease-in-out;
+            -o-transition:all 0.5s ease-in-out;
+            -ms-transition:all 0.5s ease-in-out;
+            transition:all 0.5s ease-in-out;
+            -moz-animation:blink normal 1s infinite ease-in-out;
+            /* Firefox */
+            -webkit-animation:blink normal 1s infinite ease-in-out;
+            /* Webkit */
+            -ms-animation:blink normal 1s infinite ease-in-out;
+            /* IE */
+            animation:blink normal 1s infinite ease-in-out;
+            /* Opera */
+        }
+        @keyframes blink {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @-webkit-keyframes blink {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes connect {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="smart-glass">
+    <div class="logo">
+        <div class="circle">
+            <div class="circle">
+                <div class="circle">
+                </div>
+            </div>
+        </div>
+        <div class="hold-x">
+            <div class="xbox"></div>
+        </div>
+    </div>
+    <div class="loading-text" id="loading_text">
+        Registering service worker...
+    </div>
+</div>
+<!-- /preload -->
+<script>
+
+    const tld = window.location.origin.split('.').pop();
+    var base_url = "https://osem.gigsmalaysia.com/";
+    if(tld == 'test'){
+        base_url = "https://osem.test/";
+    }
+
+    setTimeout(function(){
+        document.getElementById("loading_text").innerHTML = "Loading apps.."
+        //document.getElementById("preloader").remove();
+        document.getElementById("loading_text").innerHTML = "Opening apps..";
+        setTimeout(function(){
+            setTimeout(function(){
+                window.location.replace(base_url+'page/get_started');
+            }, 1500);
+        }, 1000);
+        //getUserInfo();
+    }, 1500);
+
+</script>
+</body>
+</html>

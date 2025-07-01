@@ -1,0 +1,7 @@
+AuthName "e-jariah.tk statistics"
+AuthType Basic
+AuthUserFile /home/ejariah/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

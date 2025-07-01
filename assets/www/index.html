@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Applify - App Landing Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/applify.css"/>
+	<style>
+		.mb{
+			margin-bottom: 2rem;
+		}
+		.demo-card{
+			position: relative;
+			height: 260px;
+			overflow: hidden;
+			border-radius: .75rem;
+			z-index: 2;
+			margin-bottom: 1rem;
+		}
+		.demo-card img{
+			position: relative;
+			top:100%;
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+			z-index: 1;
+			transform: translateY(-260px);
+			transition: transform cubic-bezier(0.86, 0, 0.07, 1);
+		}
+		.demo-card:hover img{
+			transform: translateY(-100%);
+			transition: transform linear;
+		}
+		.demo-card.no-anim img,
+		.demo-card.no-anim:hover img{
+			top:0;
+			transform: translateY(0);
+		}
+		@media (max-width: 991px) {
+			.demo-container{
+				max-width: 572px;
+			}
+		}
+		@media (max-width:500px){
+			.col-xs-6{
+				width: 100%;
+				float: none;
+			}
+			.demo-card{
+				max-width: 258px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	</style>
+</head>
+<body class="ui-transparent-nav" data-fade_in="on-load">
+	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-102072411-1', 'auto');ga('send', 'pageview');</script>
+	
+	<!-- Navbar Fixed + Default -->
+    <nav class="navbar navbar-fixed-top transparent navbar-default">
+		<div class="container">
+		
+			<!-- Navbar Logo -->
+			<a class="ui-variable-logo navbar-brand" href="index.html" title="Applify - App Landing HTML Template">
+				<!-- Default Logo -->
+				<img class="logo-default" src="img/logo/applify-logo.png" alt="Applify - App Landing HTML Template" data-uhd>
+				<!-- Transparent Logo -->
+				<img class="logo-transparent" src="img/logo/applify-logo-white.png" alt="Applify - App Landing HTML Template" data-uhd>
+			</a><!-- .navbar-brand -->
+
+			<!-- Navbar Toggle -->
+			<a href="index.html#" class="ui-mobile-nav-toggle pull-right"></a>
+			
+			<!-- Navbar Button -->
+			<a href="https://themeforest.net/item/applify-app-landing-page-html/20000720" class="btn btn-sm ui-gradient-peach pull-right">Download</a>
+
+			<!-- Navbar Navigation -->
+			<div class="ui-navigation navbar-right">
+				<ul class="nav navbar-nav">
+					<!-- Nav Item -->
+					<li class="dropdown">
+						<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" >
+							Home
+						</a>
+						<ul class="dropdown-menu ">
+							<li>
+								<a href="demo-slider.html">Slider Hero</a>
+							</li>
+							<li>
+								<a href="demo-waves.html">Waves Hero</a>
+							</li>
+							<li>
+								<a href="demo-curve.html">Curve Hero</a>
+							</li>
+							<li>
+								<a href="demo-tilt.html">Tilt Hero</a>
+							</li>
+							<li>
+								<a href="coming-soon.html">Coming Soon</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Nav Item -->
+					<li>
+						<a href="demo-slider.html#how-it-works">How It Works</a>
+					</li>
+					<!-- Nav Item -->
+					<li>
+						<a href="demo-slider.html#features">Features</a>
+					</li>
+					<!-- Nav Item -->
+					<li>
+						<a href="demo-slider.html#pricing">Pricing</a>
+					</li>
+					<!-- Nav Item -->
+					<li class="dropdown">
+						<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+							Blog
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="blog.html">Blog Sidebar</a>
+							</li>
+							<li>
+								<a href="blog-grid.html">Blog Grid</a>
+							</li>
+							<li>
+								<a href="blog-post.html">Blog Post</a>
+							</li>
+						</ul>
+					</li>
+				</ul><!--.navbar-nav -->
+			</div><!--.ui-navigation -->
+		</div><!-- .container -->
+	</nav> <!-- nav -->
+	
+	<!-- Main Wrapper -->
+    <div class="main" role="main">
+    	
+		<div class="ui-hero hero-sm ui-curve ui-gradient-peach">
+			<div class="container text-center">
+				<h1 class="animate" data-show="fade-in-up" data-delay="100" style="color:#FFF">
+					Applify Demos
+				</h1>
+			</div>
+		</div>
+ 
+   		<div class="section">
+   			<div class="container text-center demo-container">
+   				<div class="row">
+   					<div class="col-md-3 col-xs-6 mb">
+   						<div class="ui-card ui-action-card demo-card shadow-md" data-target="demo-slider.html">
+   							<img src="img/demos/demo-slider.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="demo-slider.html">
+							<h5>Slider Hero</h5>
+   						</a>
+   					</div>
+   					<div class="col-md-3 col-xs-6 mb" data-delay="200">
+   						<div class="ui-card ui-action-card demo-card shadow-md" data-target="demo-waves.html">
+   							<img src="img/demos/demo-waves.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="demo-waves.html">
+   							<h5>Waves Hero</h5>
+   						</a>
+   					</div>
+   					<div class="col-md-3 col-xs-6 mb" data-delay="400">
+   						<div class="ui-card ui-action-card demo-card shadow-md" data-target="demo-curve.html">
+   							<img src="img/demos/demo-curved.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="demo-curve.html">
+   							<h5>Curve Hero</h5>
+   						</a>
+   					</div>
+   					<div class="col-md-3 col-xs-6 mb" data-delay="600">
+   						<div class="ui-card ui-action-card demo-card shadow-md" data-target="demo-tilt.html">
+   							<img src="img/demos/demo-tilted.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="demo-tilt.html">
+   							<h5>Tilt Hero</h5>
+   						</a>
+   					</div>
+   					<div class="col-md-3 col-xs-6 mb">
+   						<div class="ui-card ui-action-card demo-card shadow-md" data-target="blog.html">
+   							<img src="img/demos/blog.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="blog.html">
+   							<h5>Blog Sidebar</h5>
+   						</a>
+   					</div>
+   					<div class="col-md-3 col-xs-6 mb" data-delay="200">
+   						<div class="ui-card ui-action-card demo-card shadow-md" data-target="blog-grid.html">
+   							<img src="img/demos/blog-grid.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="blog-grid.html">
+   							<h5>Blog Grid</h5>
+   						</a>
+   					</div>
+   					<div class="col-md-3 col-xs-6 mb" data-delay="400">
+   						<div class="ui-card ui-action-card demo-card shadow-md" data-target="blog-post.html">
+   							<img src="img/demos/blog-post.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="blog-post.html">
+   							<h5>Blog Post</h5>
+   						</a>
+   					</div>
+   					<div class="col-md-3 col-xs-6 mb" data-delay="600">
+   						<div class="ui-card ui-action-card demo-card shadow-md no-anim" data-target="coming-soon.html">
+   							<img src="img/demos/coming-soon.jpg" alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd />
+   						</div>
+   						<a href="coming-soon.html">
+   							<h5>Coming Soon</h5>
+   						</a>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+   		
+    </div><!-- .main -->
+    
+    <!-- Scripts -->
+	<script type="text/javascript" src="js/libs/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap.js"></script>
+	<script type="text/javascript" src="js/applify/applify.js"></script>
+	<script>
+	$(window).on('resize', function(){
+		demoCards();
+	});
+	function demoCards(){
+		$('.demo-card').each(function(){
+			var $this = $(this);
+			var conH = $this.height();
+			var imgH = $this.children('img').height();
+			var animDur = ((imgH / conH) - 1) * 1.25;
+			$this
+				.mouseover(function() {
+					$this.children('img').css({
+						'transition-duration': animDur + 's'
+					});
+				})
+				.mouseout(function() {
+					$this.children('img').css({
+						'transition-duration': '1s'
+					});
+				});		 
+		});
+	}
+	$('.demo-card').on('click', function(e){
+		e.preventDefault();
+		var $target = $(this).attr('data-target');
+		window.open(
+		  $target,
+		  '_blank'
+		);
+	})
+	</script>
+</body>
+</html>
