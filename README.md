@@ -7,8 +7,6 @@ A brief description of what this project does and who it's for :
 1. ✅ Crawl an API
 2. ✅ View product listing
 
-3. Status : Locked, Release, Extended, Closed.
-
 
 
 ## Screenshots
