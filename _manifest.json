@@ -1,13 +1,13 @@
 {
   "lang": "en",
   "id": "/",
-  "name": "Malaysia Brand Day",
+  "name": "Osem",
   "scope": "/",
   "display": "standalone",
   "start_url" : "/pwa_offline_landing.html",
   "related_applications": [],
   "prefer_related_applications": false,
-  "short_name": "MBD",
+  "short_name": "Osem",
   "description": "Our system is designed to help Malaysian brands capture more leads, track conversions, and measure impact – in real time.",
   "orientation": "portrait",
   "display_override": ["window-controls-overlay"],
@@ -24,15 +24,6 @@
   ],
   "categories": [
     "business"
-  ],
-  "shortcuts": [
-    {
-      "name": "Malaysia Brand Day",
-      "short_name": "MBD",
-      "description": "Our system is designed to help Malaysian brands capture more leads, track conversions, and measure impact – in real time.",
-      "url": "/about",
-      "icons": [{ "src": "https://crm.qtic.my/assets/lead/AppImages/android/android-launchericon-192-192.png", "sizes": "192x192" }]
-    }
   ],
   "icons": [
     {

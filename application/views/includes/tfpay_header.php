@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/tfpay-app-pwa/styles/bootstrap.css?time=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/tfpay-app-pwa/styles/swiper-bundle.min.css">
     <link rel="stylesheet"type="text/css" href="<?php echo base_url(); ?>assets/tfpay-app-pwa/styles/styles.css"/>
-    <link rel="manifest" href="<?php echo base_url(); ?>_manifest.json?asd=assd" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="manifest" href="<?php echo base_url(); ?>_manifest.json?asd=assad" data-pwa-version="set_in_manifest_and_pwa_js">
 
     <link rel="icon" type="image/png" href="/assets/lead/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/lead/favicon/favicon.svg" />
@@ -265,7 +265,7 @@
 <?php if(!is_localhost()){ ?>
 
 
-<button id="install" class="btn btn-danger btn-lg" style="border-radius: 0; text-transform: none;" hidden>Click to install CRM Leads</button>
+<button id="install" class="btn btn-danger btn-lg" style="border-radius: 0; text-transform: none;" hidden>Click to install Osem</button>
 <script>
     let installPrompt = null;
     const installButton = document.querySelector("#install");
