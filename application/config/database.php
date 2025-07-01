@@ -100,9 +100,9 @@ if(is_localhost()){
     $db['default'] = array(
         'dsn'	=> '',
         'hostname' => 'localhost',
-        'username' => 'appsdesignasia_crmqtic2',
-        'password' => 'JF8R4UHTG89RJER9FRJEWOGJG9GJHRI9EHUE893URTSREH89RJU4894UJR',
-        'database' => 'appsdesignasia_crmqtic2',
+        'username' => 'usahawa8_osem',
+        'password' => 'JF8R4UHTG89RJER9FRJEWOGJG9GJHRI9EHUE893URTSREH89RJU4894UJDR',
+        'database' => 'usahawa8_osem',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
