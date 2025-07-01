@@ -68,17 +68,6 @@ $autoload['libraries'] = array(
     'far_menu',
     'far_auth',
     'far_setting',
-    'far_product',
-    'far_attendance',
-    'far_stock',
-    'far_visitor',
-    'far_order',
-    'far_customer',
-    'far_package',
-    'far_reservation',
-    'far_sales',
-    'far_staff',
-    'far_agent',
     'far_osem'
 
 );
